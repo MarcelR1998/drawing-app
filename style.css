@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    margin-top: 0;
+    margin-left: 5px;
+
+    font-size: 40px;
+}
+
+#canvas {
+    /*border: 2px solid black;*/
+    background-color: white;
+    display: block;
+}
+
+#canvas:hover {
+    cursor: crosshair;
+}
+
+.toolbar {
+    /*position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;*/
+    background-color: rgb(224, 224, 224);
+    width: 800px;
+}
+
+p {
+    display: inline;
+    /*margin: 5px;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.colorSpan {
+    color: white;
+    filter: invert(1) grayscale(1);;
+}
+
+button {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#aboutWindow {
+    background: linear-gradient(0deg, rgba(17,224,224,1) 0%, rgba(36,121,9,1) 56%, rgba(245,255,0,1) 100%);
+    color: white;
+    width: 300px;
+    padding: 1em;
+   top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#aboutwindow:-moz-drag-over{
+    color: yellow;
+}
+
+#close {
+    float: right;
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+    font-size: 45px;
+}
+
+.aboutH2Span {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
