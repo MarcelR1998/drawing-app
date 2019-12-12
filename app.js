@@ -74,9 +74,12 @@ window.addEventListener("click", function (e) {
         allowNewWindow = true;
     }
 
-    if (e.target.id != "aboutWindow" && e.target.id != "about") {
-        document.body.removeChild(aboutWindow);
-        allowNewWindow = true;
+    //Closes about window if user clicks outside window
+    if (!allowNewWindow) {
+        if (e.target.id != "aboutWindow" && e.target.id != "about") {
+            document.body.removeChild(aboutWindow);
+            allowNewWindow = true;
+        }
     }
 
     if (e.target.id == "clearCanvas") {
